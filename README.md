@@ -1,6 +1,6 @@
 
 
-# Hospital System Chatbot
+# Health Hive - Hospital System Chatbot
 
 ## About
 This project is the final submission for the course Prompt Engineering INFO7375 at Northeastern University, conducted under the guidance of Professor Nick Brown. The project showcases the practical application of advanced prompt engineering techniques, LLMs, and generative AI to solve real-world problems in the healthcare domain.
