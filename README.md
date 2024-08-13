@@ -6,8 +6,8 @@
 This project is the final submission for the course Prompt Engineering INFO7375 at Northeastern University, conducted under the guidance of Professor Nick Brown. The project showcases the practical application of advanced prompt engineering techniques, LLMs, and generative AI to solve real-world problems in the healthcare domain.
 
 ### Authors
- 1. Adhyantini Bogawat - NUID: 002737089 | [LinkedIn](https://www.linkedin.com/in/adhyantini-bogawat/) 
- 2. Chinmay Dharwad - NUID: 002737089 | [LinkedIn](https://www.linkedin.com/in/chinmay-dharwad-476092128/)
+ 1. Adhyantini Bogawat - NUID: 002766612 | [LinkedIn](https://www.linkedin.com/in/adhyantini-bogawat/) 
+ 2. Chinmay Dharwad - NUID: 002771037 | [LinkedIn](https://www.linkedin.com/in/chinmay-dharwad-476092128/)
  3. Kishor Channal - NUID: 002737089 | [LinkedIn](https://www.linkedin.com/in/kishorchannal/)   
 
 ## Introduction to the Project and Its Objectives
