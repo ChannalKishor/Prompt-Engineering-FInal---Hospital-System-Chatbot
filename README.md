@@ -7,6 +7,10 @@ This project is the final submission for the course Prompt Engineering INFO7375 
 
 ### Youtube Video Link
 
+### Project Architecture
+ ![Architecture](URL)
+
+
 ### Project Setup
 1. Set up a Neo4J AuraDB instace. 
 2. Create a .env file with the following environment variables
