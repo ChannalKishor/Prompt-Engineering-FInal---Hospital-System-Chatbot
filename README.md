@@ -65,3 +65,7 @@ Each iteration was reviewed to ensure improvements in response accuracy and rele
 8. **Testing and Validation:** Post fine-tuning, the model was rigorously tested with new queries to validate its performance.Adjustments were made based on testing feedback to optimize the final model.
 9. **Deployment:** The fine-tuned model was integrated into the chatbot's architecture, improving its response quality and user experience.
 
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
