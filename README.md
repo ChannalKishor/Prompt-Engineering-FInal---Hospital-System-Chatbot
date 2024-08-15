@@ -5,47 +5,46 @@
 ## About
 This project is the final submission for the course Prompt Engineering INFO7375 at Northeastern University, conducted under the guidance of Professor Nick Brown. The project showcases the practical application of advanced prompt engineering techniques, LLMs, and generative AI to solve real-world problems in the healthcare domain.
 
+### Youtube Video Link
+
+### Project Setup
+1. Set up a Neo4J AuraDB instace. 
+2. Create a .env file with the following environment variables
+
+```
+NEO4J_URI=<YOUR_NEO4J_URI>
+NEO4J_USERNAME=<YOUR_NEO4J_USERNAME>
+NEO4J_PASSWORD=<YOUR_NEO4J_PASSWORD>
+
+OPENAI_API_KEY=<YOUR_OPENAI_API_KEY>
+
+HOSPITALS_CSV_PATH=/data/hospitals.csv
+PAYERS_CSV_PATH=/data/payers.csv
+PHYSICIANS_CSV_PATH=/data/physicians.csv
+PATIENTS_CSV_PATH=/data/patients.csv
+VISITS_CSV_PATH=/data/visits.csv
+REVIEWS_CSV_PATH=/data/reviews.csv
+EXAMPLE_CYPHER_CSV_PATH=/data/example_cypher.csv
+
+CHATBOT_URL=http://host.docker.internal:8000/hospital-rag-agent
+
+HOSPITAL_AGENT_MODEL=gpt-4o-mini
+HOSPITAL_CYPHER_MODEL=gpt-4o-mini
+HOSPITAL_QA_MODEL=gpt-4o-mini
+
+NEO4J_CYPHER_EXAMPLES_INDEX_NAME=questions
+NEO4J_CYPHER_EXAMPLES_NODE_NAME=Question
+NEO4J_CYPHER_EXAMPLES_TEXT_NODE_PROPERTY=question
+NEO4J_CYPHER_EXAMPLES_METADATA_NAME=cypher
+```
+
+3. Install Docker Compose
+4. Open a terminal and run 
+   ``` docker-compose up --build ```
+
+5. After the container finishes building, you will be able to access the application at http://localhost:8501/
+
 ### Authors
  1. Adhyantini Bogawat - NUID: 002766612 | [LinkedIn](https://www.linkedin.com/in/adhyantini-bogawat/) 
  2. Chinmay Dharwad - NUID: 002771037 | [LinkedIn](https://www.linkedin.com/in/chinmay-dharwad-476092128/)
  3. Kishor Channal - NUID: 002737089 | [LinkedIn](https://www.linkedin.com/in/kishorchannal/)   
-
-## Introduction to the Project and Its Objectives
-
-This project involves building a sophisticated chatbot for a large hospital system, leveraging the latest advancements in generative AI, retrieval-augmented generation (RAG), and large language models (LLMs). The primary objective is to provide stakeholders with a tool that can answer both structured and unstructured queries about hospital data, patient experiences, physician details, and more, without the need for complex query languages or reports. This project integrates multiple technologies including LangChain, Neo4j, and FastAPI to create a powerful and scalable solution.
-
-### Architecture
-![Project_Architecture](Project_Architecture.png)
-
-## Detailed Explanation of the Use Case
-
-The chatbot is designed to meet the specific needs of a large hospital system in the United States. The stakeholders need more visibility into the ever-changing data collected by the hospital, allowing them to ask ad-hoc questions about various aspects like patient visits, physician performance, and hospital operations. The chatbot leverages generative AI and RAG by integrating LLMs with graph databases (Neo4j) to answer these queries. The LangChain framework is used to manage the complexity of the chatbot's operations, including the decision-making processes of an AI agent that determines the appropriate tool to answer each query.
-
-Key use cases include:
-
--   Retrieving current wait times at hospitals.
--   Aggregating and summarizing patient reviews to identify trends.
--   Answering detailed financial queries related to insurance billing.
--   Providing dynamic responses to complex, multi-faceted questions using AI-driven Cypher queries on the Neo4j graph database.
-
-## Key Features and Functionalities
-
--   **LangChain Integration:** The chatbot uses LangChain to manage interactions between the LLMs and other tools like vector databases and custom functions.
--   **Neo4j Graph Database:** The hospital system data is stored and queried using Neo4j, which allows for complex relationships and connections between different entities like patients, visits, and physicians.
--   **RAG (Retrieval-Augmented Generation):** The chatbot retrieves relevant data from both structured (SQL-like) and unstructured (free-text reviews) sources to generate accurate, contextually relevant responses.
--   **FastAPI Deployment:** The chatbot is served via a FastAPI endpoint, enabling asynchronous interactions and scalable deployments.
--   **Streamlit UI:** A user-friendly interface built with Streamlit allows stakeholders to interact with the chatbot in a conversational manner.
-
-## Challenges Faced and How They Were Overcome
-
--   **Data Integration:** One of the significant challenges was integrating diverse data sources, including structured hospital data and unstructured patient reviews, into a coherent graph database. This was overcome by designing a robust ETL pipeline using Neo4j and Python, ensuring all data was properly formatted and indexed.
--   **Handling Asynchronous Requests:** To ensure scalability and responsiveness, the API was designed to handle asynchronous requests. This required careful management of network latencies and retries, which was addressed by implementing retry logic and optimizing the FastAPI deployment.
--   **Dynamic Query Handling:** The chatbot had to be flexible enough to handle both simple queries (e.g., current wait times) and complex queries requiring aggregation and summarization. This was achieved by using LangChain's chaining and agent functionalities to dynamically select the appropriate tool for each query.
-
-## Conclusion and Future Scope
-
-This project successfully demonstrates the integration of advanced AI techniques with practical, real-world applications in healthcare. The chatbot not only meets the current needs of the hospital system but also sets the stage for future enhancements. Potential areas for future work include:
-
--   **Enhanced NLP Capabilities:** Incorporating more advanced NLP techniques to better understand and process complex medical terminology.
--   **Expanded Data Sources:** Integrating additional data sources, such as real-time patient monitoring data, to provide even more comprehensive insights.
--   **Advanced Analytics:** Adding predictive analytics capabilities to forecast trends and identify potential issues before they arise.
