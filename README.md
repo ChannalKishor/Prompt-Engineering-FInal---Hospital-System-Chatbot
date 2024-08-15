@@ -10,6 +10,11 @@ This project is the final submission for the course Prompt Engineering INFO7375 
 ### Project Architecture
  ![Architecture](https://github.com/ChannalKishor/Prompt-Engineering-FInal---Hospital-System-Chatbot/blob/main/Project_Architecture.png)
 
+### Nodes and Relationship for Graph Database
+ ![Graph Database](https://github.com/ChannalKishor/Prompt-Engineering-FInal---Hospital-SystemChatbot/blob/main/Nodes%20and%20Relationship%20for%20Graph%20Database.webp)
+
+
+
 
 ### Project Setup
 1. Set up a Neo4J AuraDB instace. 
