@@ -2,6 +2,11 @@
 
 # Health Hive - Hospital System Chatbot
 
+### Authors
+ 1. Adhyantini Bogawat - NUID: 002766612 | [LinkedIn](https://www.linkedin.com/in/adhyantini-bogawat/) 
+ 2. Chinmay Dharwad - NUID: 002771037 | [LinkedIn](https://www.linkedin.com/in/chinmay-dharwad-476092128/)
+ 3. Kishor Channal - NUID: 002737089 | [LinkedIn](https://www.linkedin.com/in/kishorchannal/)   
+
 ## About
 This project is the final submission for the course Prompt Engineering INFO7375 at Northeastern University, conducted under the guidance of Professor Nick Brown. The project showcases the practical application of advanced prompt engineering techniques, LLMs, and generative AI to solve real-world problems in the healthcare domain.
 
@@ -60,7 +65,3 @@ Each iteration was reviewed to ensure improvements in response accuracy and rele
 8. **Testing and Validation:** Post fine-tuning, the model was rigorously tested with new queries to validate its performance.Adjustments were made based on testing feedback to optimize the final model.
 9. **Deployment:** The fine-tuned model was integrated into the chatbot's architecture, improving its response quality and user experience.
 
-### Authors
- 1. Adhyantini Bogawat - NUID: 002766612 | [LinkedIn](https://www.linkedin.com/in/adhyantini-bogawat/) 
- 2. Chinmay Dharwad - NUID: 002771037 | [LinkedIn](https://www.linkedin.com/in/chinmay-dharwad-476092128/)
- 3. Kishor Channal - NUID: 002737089 | [LinkedIn](https://www.linkedin.com/in/kishorchannal/)   
