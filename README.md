@@ -15,7 +15,7 @@ This project is the final submission for the course Prompt Engineering INFO7375 
 This project involves building a sophisticated chatbot for a large hospital system, leveraging the latest advancements in generative AI, retrieval-augmented generation (RAG), and large language models (LLMs). The primary objective is to provide stakeholders with a tool that can answer both structured and unstructured queries about hospital data, patient experiences, physician details, and more, without the need for complex query languages or reports. This project integrates multiple technologies including LangChain, Neo4j, and FastAPI to create a powerful and scalable solution.
 
 ### Architecture
-![enter image description here](https://realpython.com/cdn-cgi/image/width=2000,format=auto/https://files.realpython.com/media/Screenshot_2024-01-15_at_8.08.18_PM.fe16f8a318cc.png)
+![Project_Architecture](Project_Architecture.png)
 
 ## Detailed Explanation of the Use Case
 
