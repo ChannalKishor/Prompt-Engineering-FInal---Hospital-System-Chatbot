@@ -8,7 +8,7 @@ This project is the final submission for the course Prompt Engineering INFO7375 
 ### Youtube Video Link
 
 ### Project Architecture
- ![Architecture](URL)
+ ![Architecture](https://github.com/ChannalKishor/Prompt-Engineering-FInal---Hospital-System-Chatbot/blob/main/Project_Architecture.png)
 
 
 ### Project Setup
